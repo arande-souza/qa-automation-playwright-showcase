@@ -1,3 +1,4 @@
+import path from 'path';
 import { defineConfig, devices } from '@playwright/test';
 
 /**
@@ -81,8 +82,8 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: 'yarn dev',
-    cwd: './qa-realworld-app',
+    command: 'corepack yarn dev',
+    cwd: path.join(__dirname, 'qa-realworld-app'),
     url: 'http://localhost:4000',
     reuseExistingServer: true,
     timeout: 120 * 1000,
