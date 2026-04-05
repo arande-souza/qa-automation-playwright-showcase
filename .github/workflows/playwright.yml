@@ -29,9 +29,18 @@ jobs:
       run: yarn install --frozen-lockfile
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+    - name: Start Real World App
+      working-directory: qa-realworld-app
+      run: |
+        mkdir -p ../reports
+        corepack yarn dev > ../reports/app.log 2>&1 &
+        npx wait-on http://localhost:4000
     - name: Run Playwright tests
       id: playwright_tests
       run: npx playwright test
+    - name: Show app log on failure
+      if: ${{ failure() }}
+      run: cat reports/app.log
     - name: Generate dashboard report
       if: ${{ always() }}
       run: node scripts/generate-playwright-dashboard.js

@@ -80,10 +80,12 @@ export default defineConfig({
   ],
 
   /* Run your local dev server before starting the tests */
-  webServer: {
-    command: 'corepack yarn --cwd qa-realworld-app dev',
-    url: 'http://localhost:4000',
-    reuseExistingServer: true,
-    timeout: 120 * 1000,
-  },
+  webServer: process.env.CI
+    ? undefined
+    : {
+        command: 'corepack yarn --cwd qa-realworld-app dev',
+        url: 'http://localhost:4000',
+        reuseExistingServer: true,
+        timeout: 120 * 1000,
+      },
 });
