@@ -1,0 +1,16 @@
+[
+  {
+    "runId": "local-1775353522007",
+    "runNumber": null,
+    "branch": "local",
+    "status": "passed",
+    "startedAt": "2026-04-05T01:44:21.913Z",
+    "finishedAt": "2026-04-05T01:44:45.877Z",
+    "duration": 23964.566000000003,
+    "total": 12,
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0,
+    "successRate": 100
+  }
+]

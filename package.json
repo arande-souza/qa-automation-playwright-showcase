@@ -1,0 +1,22 @@
+{
+  "name": "learn-playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "report:dashboard": "node scripts/generate-playwright-dashboard.js",
+    "test:e2e:dashboard": "node scripts/run-playwright-with-dashboard.js",
+    "test:e2e:chrome": "playwright test --project=chromium"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  }
+}
