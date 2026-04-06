@@ -1,1 +1,2 @@
 reports/* linguist-detectable=false
+reports/** linguist-detectable=false
