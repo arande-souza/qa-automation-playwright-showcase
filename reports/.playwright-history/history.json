@@ -1,12 +1,12 @@
 [
   {
-    "runId": "local-1775355767280",
+    "runId": "local-1775355668478",
     "runNumber": null,
     "branch": "local",
     "status": "passed",
-    "startedAt": "2026-04-05T02:21:59.659Z",
-    "finishedAt": "2026-04-05T02:22:47.157Z",
-    "duration": 47498.748999999996,
+    "startedAt": "2026-04-05T02:20:22.658Z",
+    "finishedAt": "2026-04-05T02:21:08.360Z",
+    "duration": 45702.255000000005,
     "total": 12,
     "passed": 12,
     "failed": 0,
@@ -14,6 +14,19 @@
     "successRate": 100
   },
   {
+    "runId": "local-1775355573951",
+    "runNumber": null,
+    "branch": "local",
+    "status": "passed",
+    "startedAt": "2026-04-05T02:18:47.908Z",
+    "finishedAt": "2026-04-05T02:19:33.800Z",
+    "duration": 45892.764,
+    "total": 12,
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0,
+    "successRate": 100
+  },  {
     "runId": "local-1775355668478",
     "runNumber": null,
     "branch": "local",
