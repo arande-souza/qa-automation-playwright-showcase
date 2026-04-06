@@ -1,2 +1,3 @@
 reports/* linguist-detectable=false
 reports/** linguist-detectable=false
+*.html linguist-vendored
